@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анимация объекта</title>
+    <style>
+        canvas {
+            border: 1px solid #000;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="animationCanvas" width="800" height="600"></canvas>
+    <script>
+        const canvas = document.getElementById('animationCanvas');
+        const ctx = canvas.getContext('2d');
+        
+        let x = 100; 
+        let y = 100; 
+        let size = 50;
+        let color = 'blue'; 
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height); 
+
+            ctx.fillStyle = color;
+
+            if (size < 100) {
+                ctx.beginPath();
+                ctx.arc(x, y, size, 0, Math.PI * 2); 
+                ctx.fill();
+            } else {
+                ctx.fillRect(x - size, y - size, size * 2, size * 2); 
+            }
+
+        
+          
+                size += 1; 
+                if (size >= 100) {
+                }
+
+            requestAnimationFrame(animate); 
+        }
+
+        animate(); 
+    </script>
+</body>
+</html>

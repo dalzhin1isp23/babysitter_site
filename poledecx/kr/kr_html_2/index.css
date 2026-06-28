@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.head {
+    background-color: #51D84C;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.amblem {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.amblem_text {
+    font-size: 24px;
+    color: #343434;
+    font-weight: bold;
+}
+
+.nav-buttons {
+    margin-left: auto;
+    display: flex;
+}
+
+.uslugi {
+    background-color: #51D84C;
+    border: none;
+    height: 60px;
+    padding: 0 15px;
+    color: #343434;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.uslugi:hover {
+    background-color: #43B53E;
+}
+
+.uslugi_but {
+    display: none;
+    background-color: #51D84C;
+    border: none;
+    height: 60px;
+    width: 60px;
+    font-size: 24px;
+    color: #343434;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.content {
+    padding: 100px 20px;
+    min-height: calc(100vh - 260px);
+    background-color: #92FF8E;
+}
+
+.reg_form {
+    width: 100%;
+    max-width: 300px;
+    padding: 30px 0;
+    margin: 0 auto;
+    background-color: #343434;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input_reg {
+    border-radius: 20px;
+    height: 40px;
+    width: 80%;
+    margin: 10px 0;
+    border: 1px solid black;
+    padding: 0 15px;
+    font-size: 14px;
+}
+
+.reg_zag {
+    margin-bottom: 20px;
+    color: #FFF2F1;
+    font-size: 24px;
+}
+
+.bat_reg {
+    width: 80%;
+    height: 50px;
+    background-color: #51D84C;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    color: #343434;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.bat_reg:hover {
+    background-color: #43B53E;
+}
+
+.footer {
+    width: 100%;
+    background-color: #343434;
+    color: white;
+    height: 250px;
+    padding: 30px 20px 10px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+    float: right;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section p {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .nav-buttons {
+        display: none;
+    }
+    
+    .uslugi_but {
+        display: block;
+    }
+    
+    .amblem_text {
+        font-size: 20px;
+    }
+    
+    .footer-section {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: 50px 20px;
+    }
+    
+    .reg_form {
+        padding: 20px 0;
+    }
+    
+    .reg_zag {
+        font-size: 20px;
+    }
+    
+    .input_reg {
+        height: 35px;
+    }
+    
+    .bat_reg {
+        height: 45px;
+        font-size: 15px;
+    }
+}

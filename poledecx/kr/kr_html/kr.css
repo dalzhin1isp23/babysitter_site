@@ -1,0 +1,91 @@
+*{
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #202020;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: #ffb726;
+    color: #202020;
+    text-align: center;
+}
+.cont{
+    background-color: #202020;
+    color: #ffb726;
+    width: 100%;
+
+    
+}
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: #ffb726;
+    padding: 30px;
+}
+.preim{
+    margin-top: 50px;
+    border-radius: 20px;
+    position: relative;
+    background-color: white;
+    height: 400px;
+    width: 600px;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.slide{
+    height: 500px;
+    width: 600px;
+    background-color: white;
+    margin: 60px;
+    border-radius: 50px 50px 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slider_head{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: #202020;
+    font-size: 30pt;
+    background-color: #ffc44f;
+    border-radius:50px 50px 0px 0px  ;
+}
+.soo{
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    color: #202020;
+    padding: 10px;
+    width: 400px;
+    height: 60px;
+    border-radius: 50px;
+    box-shadow: #000000 0px 10px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.star{
+    height: 15px;
+    width: 15px;
+}
+.ocenka{
+    position: relative;
+    width: 50%;
+    float: left;
+    height: 15px;
+    
+}
+.spisok{
+    font-size: 20pt;
+    margin-left: 160px;
+    text-align: left;
+}
+.otziv{
+    float: left;
+    margin-left: 55px;
+}

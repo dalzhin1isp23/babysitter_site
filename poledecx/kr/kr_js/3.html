@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="fallCanvas" width="800" height="600" style="border:1px solid #000;"></canvas>
+    <script>
+        const fallCanvas = document.getElementById('fallCanvas');
+        const fallCtx = fallCanvas.getContext('2d');
+
+        let y = 0;
+        const gravity = 0.5;
+        let velocity = 0;
+
+        function animateFall() {
+            fallCtx.clearRect(0, 0, fallCanvas.width, fallCanvas.height);
+            
+            fallCtx.beginPath();
+            fallCtx.arc(400, y, 20, 0, Math.PI * 2);
+            fallCtx.fillStyle = 'green';
+            fallCtx.fill();
+            fallCtx.closePath();
+
+            velocity += gravity;
+            y += velocity;
+
+            if (y > fallCanvas.height - 20) { 
+                y = fallCanvas.height - 20;
+               
+            }
+
+            requestAnimationFrame(animateFall);
+        }
+
+        animateFall();
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="pathCanvas" width="800" height="600" style="border:1px solid #000;"></canvas>
+    <script>
+    var pathCanvas = document.getElementById('pathCanvas');
+    var pathCtx = pathCanvas.getContext('2d');
+
+    var angle = 0;
+    var radius = 100;
+
+    function animatePoint() {
+        pathCtx.clearRect(0, 0, pathCanvas.width, pathCanvas.height);
+        
+        var x = 400 + radius * Math.cos(angle);
+        var y = 300 + radius * Math.sin(angle);
+        
+        pathCtx.beginPath();
+        pathCtx.arc(x, y, 5, 0, Math.PI * 2);
+        pathCtx.fillStyle = 'red';
+        pathCtx.fill();
+        pathCtx.closePath();
+
+        angle += 0.08; 
+        requestAnimationFrame(animatePoint);
+    }
+
+    animatePoint();
+</script>
+</body>
+</html>

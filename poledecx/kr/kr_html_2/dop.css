@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.head {
+    background-color: #51D84C;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.amblem {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.amblem_text {
+    font-size: 24px;
+    color: #343434;
+    font-weight: bold;
+}
+
+.nav-buttons {
+    margin-left: auto;
+    display: flex;
+}
+
+.uslugi {
+    background-color: #51D84C;
+    border: none;
+    height: 60px;
+    padding: 0 15px;
+    color: #343434;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.uslugi_but {
+    display: none;
+    background-color: #51D84C;
+    border: none;
+    height: 60px;
+    width: 60px;
+    font-size: 24px;
+    color: #343434;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.content {
+    padding: 30px 20px;
+    min-height: calc(100vh - 260px);
+    background-color: #92FF8E;
+}
+
+/* Стили для форм */
+.auth_form, .reg_form, .request_form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #343434;
+    border-radius: 20px;
+    color: white;
+}
+
+.auth_zag, .reg_zag, .request_zag {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.input_auth, .input_reg, .input_request {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.bat_auth, .bat_reg, .bat_request {
+    width: 100%;
+    padding: 12px;
+    background-color: #51D84C;
+    border: none;
+    border-radius: 20px;
+    color: #343434;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.auth_link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.auth_link a {
+    color: #51D84C;
+    text-decoration: none;
+}
+
+/* Стили для страницы заявок */
+.requests-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.requests-title {
+    margin-bottom: 20px;
+    color: #343434;
+}
+
+.new-request-btn {
+    padding: 10px 20px;
+    background-color: #51D84C;
+    border: none;
+    border-radius: 20px;
+    color: #343434;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.requests-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.request-item {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Стили для формы заявки */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Стили для админ панели */
+.admin-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.admin-title {
+    margin-bottom: 20px;
+    color: #343434;
+}
+
+.admin-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.admin-search {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+}
+
+.admin-btn {
+    padding: 10px 20px;
+    background-color: #51D84C;
+    border: none;
+    border-radius: 20px;
+    color: #343434;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th, .admin-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.admin-table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.table-btn {
+    padding: 5px 10px;
+    background-color: #51D84C;
+    border: none;
+    border-radius: 5px;
+    color: #343434;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+/* Футер */
+.footer {
+    width: 100%;
+    background-color: #343434;
+    color: white;
+    padding: 30px 20px 10px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section p {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .nav-buttons {
+        display: none;
+    }
+    
+    .uslugi_but {
+        display: block;
+    }
+    
+    .amblem_text {
+        font-size: 20px;
+    }
+    
+    .footer-section {
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .admin-table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: 20px 10px;
+    }
+    
+    .auth_form, .reg_form, .request_form {
+        padding: 20px;
+    }
+    
+    .requests-container, .admin-container {
+        padding: 20px;
+    }
+    
+    .admin-controls {
+        flex-direction: column;
+    }
+}

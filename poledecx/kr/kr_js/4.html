@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="pythagoreanCanvas" width="800" height="600" style="border:1px solid #000;"></canvas>
+    <script>
+        const pythagoreanCanvas = document.getElementById('pythagoreanCanvas');
+        const pythagoreanCtx = pythagoreanCanvas.getContext('2d');
+
+        let a = 0;
+        let b = 0;
+
+        function animatePythagorean() {
+            pythagoreanCtx.clearRect(0, 0, pythagoreanCanvas.width, pythagoreanCanvas.height);
+
+            // Draw squares
+            pythagoreanCtx.fillStyle = 'blue';
+            pythagoreanCtx.fillRect(100, 100, a, a);
+            
+            pythagoreanCtx.fillStyle = 'red';
+            pythagoreanCtx.fillRect(100, 100 + a, b, b);
+            
+            pythagoreanCtx.fillStyle = 'green';
+            pythagoreanCtx.fillRect(100 + a, 100, Math.sqrt(a * a + b * b), Math.sqrt(a * a + b * b));
+
+            // Increase the sides
+            a += 1;
+            b += 0.5;
+
+            if (a > 200) {
+                a = 0;
+                b = 0; // Reset animation
+            }
+
+            requestAnimationFrame(animatePythagorean);
+        }
+
+        animatePythagorean();
+    </script>
+
+</body>
+</html>

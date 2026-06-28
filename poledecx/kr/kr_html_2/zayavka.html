@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новая заявка | Крокодил</title>
+    <link rel="stylesheet" href="dop.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="head">
+        <img src="amblem.png" alt="Логотип" class="amblem">
+        <p class="amblem_text">Крокодил</p>
+        <div class="nav-buttons">
+            <button class="uslugi">Услуги</button> 
+            <button class="uslugi">Клиника</button> 
+            <button class="uslugi">Цены</button> 
+            <button class="uslugi">Контакты</button> 
+            <button class="uslugi">Админ панель</button> 
+        </div>
+        <button class="uslugi_but">≡</button>
+    </div>
+
+    <div class="content">
+        <form action="" class="request_form">
+            <h1 class="request_zag">Новая заявка</h1>
+            
+            <div class="form-group">
+                <label for="address">Адрес:</label>
+                <input type="text" id="address" class="input_request" placeholder="Ваш адрес" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" class="input_request" placeholder="Ваш телефон" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="date">Желаемая дата:</label>
+                <input type="date" id="date" class="input_request" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="time">Желаемое время:</label>
+                <input type="time" id="time" class="input_request" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="service">Услуга:</label>
+                <select id="service" class="input_request" required>
+                    <option value="">Выберите услугу</option>
+                    <option value="vaccine">Кариес</option>
+                    <option value="surgery">Имплантация</option>
+                    <option value="dentistry">Ортодонт</option>
+                    <option value="grooming">Отбеливание</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>Тип оплаты:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="payment" value="cash" checked> Наличные</label>
+                    <label><input type="radio" name="payment" value="card"> Банковская карта</label>
+                </div>
+            </div>
+            
+            <button class="bat_request">Отправить заявку</button>
+        </form>
+    </div>
+    
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p>Телефон: +7 (123) 456-78-90</p>
+                <p>Email: info@krokodil.ru</p>
+                <p>Адрес: г. Барнаул, ул. Гоголя, 15</p>
+            </div>
+            <div class="footer-section">
+                <h3>Часы работы</h3>
+                <p>Пн-Пт: 9:00 - 21:00</p>
+                <p>Сб-Вс: 10:00 - 18:00</p>
+            </div>
+        </div>
+       
+    </div>
+</body>
+</html>

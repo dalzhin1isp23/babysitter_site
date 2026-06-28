@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/avto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">   
+<title>Утиный домик</title>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html" class="home">Утиный домик</a>
+        <input type="text" class="search"></input>
+        <div class="profile"></div>
+    </div>
+    <div class="nav">
+        <div class="but_nav" style="border-radius: 0px 0px 0px 10px;">Няня</div>
+        <div class="but_nav">Сиделка</div>
+        <div class="but_nav">Гувернантка</div>
+        <div class="but_nav">Репетитор</div>
+        <div class="but_nav" style="border-radius: 0px 0px 10px 0px;">Трудоустройство</div>
+
+    </div>
+    <div class="reger">
+        <p>Вход</p>
+
+        <input type="text" class="search"style="width: 80%;"placeholder="Номер телефона">
+        <input type="text" class="search"style="width: 80%;"placeholder="Пароль">
+
+        <div>
+
+        </div>
+        <button class="but_nav" style="background-color: #312815;width: 200px;border-radius: 20px;color: antiquewhite;">авторизация</button>
+
+    </div>
+</body>
+</html>
